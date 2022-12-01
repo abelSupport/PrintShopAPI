@@ -19,6 +19,6 @@ router.get('/', function(req, res) {
   router.use('/orientationmaster', require('./OrientationMaster-route').router);
   router.use('/customermaster', require('./CustomerMaster-route').router);
   router.use('/login', require('./Login-route').router);
-
-  //router.use('/printtypemaster', require('./PrintTypeMaste-route').router);
+  router.use('/sellableItem', require('./SellableItemMaster-route').router);
+ 
   module.exports=router;
