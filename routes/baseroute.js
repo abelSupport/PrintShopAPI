@@ -11,7 +11,7 @@ router.get('/', function(req, res) {
     res.send('Welcome to Node JS Routes');
   });
 
-  router.use('/login', require('./auth-route').router);
+  // router.use('/login', require('./auth-route').router);
 
   router.use('/papertypemaster', require('./PaperTypeMaster-route').router);
   router.use('/papermaster', require('./paperMaster-route').router);
